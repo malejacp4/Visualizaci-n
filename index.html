@@ -1,55 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Repositorio Visualizacion</title>
+<html>
+<title>Visualización</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+
+</nav>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dashboard</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-pink"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Dashboard</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Proyectos Nuevos</a>
+      </div>
   </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Dashboard</a>
+    <a href="#work" class="w3-bar-item w3-button">Proyectos Nuevos</a>
+   
   </div>
 </div>
 
-<!-- Header -->
-<!-- Page Container -->
+<!-- Image Header -->
 
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-<img src="https://raw.githubusercontent.com/malejacp4/Visualizacion/master/Imagenes/visual.PNG" style="width:100%" alt="Avatar">
-	<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small w3-center">
-    <h1>VISUALIZACIÓN</h1>
-<p><b>¡Bienvenido al Repositorio de Visualización de Datos!</b></p>   
-    </div>
-  </div>
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://raw.githubusercontent.com/malejacp4/Visualizacion/master/Imagenes/wave-1817646_1920.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+<p>Repositorio de Proyectos de Visualización</p> 
   
+</div>
 
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>DASHBOARD</h2>
+ <p>Modulo para Dashboard Coronavirus Bogotá: <a href="https://raw.githubusercontent.com/malejacp4/Visualizacion/master/Modulo/CovidBogota.py" target="_blank" class="fa fa-bar-chart w3-hover-opacity"style='font-size:28px'></a></p>
  
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Proyectos Nuevos</h2>
+<p>Estamos en Construcción</p>
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Redes Sociales</h4>
+  <a class="w3-button w3-large w3-pink" href="https://www.facebook.com/maria.castillopabon" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-pink" href="https://github.com/malejacp4" target="_blank" title="Github"><i class="fa fa-github"></i></a>
+  <a class="w3-button w3-large w3-pink w3-hide-small" href="http://www.linkedin.com/in/maría-alejandra-castillo-pabón-6773677b" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+  <div style="position:center;bottom:100px;z-index:1;" class="w3-center">
+    <span class="w3-text w3-padding w3-pink w3-hide-small">Ir al Inicio</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
@@ -61,3 +103,4 @@ function myFunction() {
 
 </body>
 </html>
+
